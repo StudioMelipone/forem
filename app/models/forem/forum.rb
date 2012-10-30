@@ -3,6 +3,7 @@ require 'friendly_id'
 module Forem
   class Forum < ActiveRecord::Base
     include Forem::Concerns::Viewable
+    self.table_name = "forem_forums"
 
     extend FriendlyId
     friendly_id :title, :use => :slugged

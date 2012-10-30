@@ -1,5 +1,7 @@
 module Forem
   class Group < ActiveRecord::Base
+    self.table_name = "forem_groups"
+
     validates :name, :presence => true
 
     has_many :memberships

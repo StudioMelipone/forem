@@ -1,5 +1,6 @@
 module Forem
   class View < ActiveRecord::Base
+    self.table_name = "forem_views"
     before_create :set_viewed_at_to_now
 
     belongs_to :viewable, :polymorphic => true

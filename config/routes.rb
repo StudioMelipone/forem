@@ -1,4 +1,4 @@
-Forem::Engine.routes.draw do
+Rails.application.routes.draw do
   root :to => "forums#index"
 
   resources :forums, :only => [:index, :show] do

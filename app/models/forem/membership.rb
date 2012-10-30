@@ -1,5 +1,6 @@
 module Forem
   class Membership < ActiveRecord::Base
+    self.table_name = "forem_memberships"
     belongs_to :group
     belongs_to :member, :class_name => Forem.user_class.to_s
 

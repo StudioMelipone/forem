@@ -1,6 +1,5 @@
 module ::Forem
   class Engine < Rails::Engine
-    isolate_namespace Forem
 
     class << self
       attr_accessor :root

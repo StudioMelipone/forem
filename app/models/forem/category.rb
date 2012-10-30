@@ -2,6 +2,7 @@ require 'friendly_id'
 
 module Forem
   class Category < ActiveRecord::Base
+    self.table_name = "forem_categories"
     extend FriendlyId
     friendly_id :name, :use => :slugged
 
